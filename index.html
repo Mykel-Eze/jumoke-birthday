@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - Olajumokemi</title>
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="main-page-wrapper">
+        <div class="center">
+            <h1>Happy Birthday Jumoke</h1>
+        </div>
+    </section>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/confetti.browser.min.js"></script>
+    <script>
+        // https://codepen.io/kimdontdoit/pen/wvdKLJo
+        var colors = ["#8b5642", "#6a696b"];
+
+        function frame() {
+        confetti({
+            particleCount: 2,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 },
+            colors: colors,
+        });
+        confetti({
+            particleCount: 2,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 },
+            colors: colors,
+        });
+
+        if (Date.now() < Date.now() + 15000) {
+            requestAnimationFrame(frame);
+        }
+        }
+
+        window.onload = frame();
+    </script>
+</body>
+</html>
