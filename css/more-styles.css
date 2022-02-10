@@ -34,3 +34,129 @@
 .text-1, .text-2 {
     display: none;
 }
+
+#main-content {
+    padding-bottom: 50px;
+}
+.mc-wrapper {
+    width: 90%;
+    margin: auto;
+}
+.mc-wrapper h2, .names-progress-wrapper h2 {
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 117px;
+    letter-spacing: -0.03em;
+    color: #A5A5A5;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+.names-progress-wrapper h2 {
+    width: 85%;
+}
+.mc-wrapper h2.black-txt, .names-progress-wrapper h2.black-txt {
+    top: 110px;
+    background-color: transparent;
+    z-index: 0;
+}
+.mc-wrapper h2 span, .names-progress-wrapper h2 span {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.pictures-wrapper {
+    margin-top: 250px;
+}
+.picture-block {
+    position: relative;
+    margin-bottom: 50px;
+}
+.txt-block {
+    position: absolute;
+    max-width: 300px;
+    bottom: 10px;
+    right: 0;
+}
+.picture-block-1 .txt-block {
+    left: 0;
+    right: auto;
+}
+.single-picture, .multiple-pictures {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+.celebrant-picture {
+    max-width: 400px;
+    width: 100%;
+}
+.multiple-pictures:not(.default-view) {
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.multiple-pictures {
+    transition: max-width 1.5s;
+}
+.multiple-pictures img {
+    transition: transform 1.5s;
+}
+.multiple-pictures.default-view img:not(:first-child) {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.multiple-pictures.default-view img:nth-child(1) {
+    z-index: 3;
+    position: relative;
+}
+.multiple-pictures.default-view img:nth-child(2) {
+    transform: rotate(5deg) translate(10%, -5px) scale(0.9);
+    z-index: 2;
+}
+.multiple-pictures.default-view img:nth-child(3) {
+    transform: rotate(13deg) translate(10%, -5px) scale(0.9);
+    z-index: 1;
+}
+.multiple-pictures.default-view img:nth-child(4) {
+    transform: rotate(21deg) translate(10%, -5px) scale(0.9);
+    z-index: 0;
+}
+.multiple-pictures img {
+    cursor: pointer;
+}
+.multiple-pix-info {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.multiple-pix-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 1;
+    /* transition: opacity 1.5s; */
+    z-index: 3;
+}
+.pix-shown {
+    opacity: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+}
+.footer-txt-wrapper {
+    justify-content: space-between;
+}

@@ -17,6 +17,8 @@
         <div class="row full-height">
             <div class="container full-height rel">
                 <div class="flex-div names-progress-wrapper">
+                    <!-- <h2 class="" hidden><span>sweet twenty five</span> </h2>
+                    <h2 class="black-txt" hidden><span>& loving you</span> </h2> -->
                     <div class="names-wrapper-block">
                         <div class="names-block flex-div">
                             <span class="hello-txt">Hello! </span>
@@ -37,16 +39,125 @@
                 </div>
 
                 <div id="main-content" hidden>
-                    <h1 class="center">Happy Birthday</h1>
+                    <div class="mc-wrapper">
+                        <h2 class=""><span>sweet twenty five</span> </h2>
+                        <h2 class="black-txt"><span>& loving you</span> </h2>
+                        <div class="pictures-wrapper">
+                            <div class="picture-block picture-block-1">
+                                <div class="txt-block">
+                                    Every time I think about you, I smile and I would say to myself, what better gift 
+                                    can God give man. A brave woman. A brilliant and beautiful Lady. I am always short 
+                                    of words. Keep been a blessing to our generation and myself.
+                                </div>
+                                <div class="single-picture center">
+                                    <img src="images/pix-1.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                </div>
+                            </div>
+                            <div class="picture-block picture-block-2">
+                                <div class="single-picture center">
+                                    <img src="images/pix-2.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                </div>
+                                <div class="txt-block">
+                                    Every time I think about you, I smile and I would say to myself, what better gift can 
+                                    God give man. A brave 💪🏽 woman. A brilliant and beautiful 👸🏾 Lady. I am always short 
+                                    of words. Keep been a blessing to our generation and myself.
+                                </div>
+                            </div>
+                            <div class="picture-block picture-block-2">
+                                <div class="multiple-pictures default-view center">
+                                    <img src="images/pix-3a.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                    <img src="images/pix-3b.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                    <img src="images/pix-3c.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                    <img src="images/pix-3d.png" alt="Jumoke's Picture" class="celebrant-picture">
+
+                                    <div class="multiple-pix-info">
+                                        <img src="images/grid.svg" alt="grid" class="grid-icon"> <br>
+                                        <span>4 Photos</span> <br>
+                                        <span>Tap to View</span>
+                                    </div>
+                                </div>
+                                <div class="txt-block">
+                                    Always the trouble maker 🙊 that no one seems to notice, but the kind of peace you 
+                                    radiate most especially that beautiful smile of yours 
+                                </div>
+                            </div>
+                            <div class="picture-block picture-block-2">
+                                <div class="multiple-pictures default-view center">
+                                    <img src="images/pix-4a.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                    <img src="images/pix-4b.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                    <img src="images/pix-4c.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                    <img src="images/pix-4d.png" alt="Jumoke's Picture" class="celebrant-picture">
+
+                                    <div class="multiple-pix-info">
+                                        <img src="images/grid.svg" alt="grid" class="grid-icon"> <br>
+                                        <span>4 Photos</span> <br>
+                                        <span>Tap to View</span>
+                                    </div>
+                                </div>
+                                <div class="txt-block">
+                                    Or should we talk about the🤳🏾  selfies, phone photography queen. It’s now a competition o! 
+                                    I will take special classes to ensure I get your best angles and take a better pictures of you. 
+                                </div>
+                            </div>
+                            <div class="picture-block picture-block-2">
+                                <div class="single-picture center">
+                                    <img src="images/pix-5.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                </div>
+                                <div class="txt-block">
+                                    Me, myself and I misses this view even tho I you endup planning most of our outings. 
+                                    I plan to spoil you with outings and make sure we go to places we see on instagram. 
+                                    Because you deserve more my baby. 
+                                </div>
+                            </div>
+                            <div class="picture-block picture-block-2">
+                                <div class="single-picture center">
+                                    <img src="images/pix-6.png" alt="Jumoke's Picture" class="celebrant-picture">
+                                </div>
+                                <div class="txt-block">
+                                    Keep smiling my love, ☺️ the reason to smile will never cease from your life and keep being a 
+                                    wonderful person that you are.  <br> <br>
+                                    <span>Happy 25th 🌟 Birthday🎉🎂</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- <div class="play-trigger-wrapper modal-trigger" data-target="birthday-video-box">
+            <img src="images/play-text.svg" alt="play-text" class="play-text">
+            <img src="images/play.svg" alt="play" class="play-img">
+        </div>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+        </div> -->
+
+        <footer hidden>
+            <div class="container">
+                <div class="flex-div footer-txt-wrapper">
+                    <span>With ♥ Olamide Olagunju</span>
+                    <span>© Designed with ❤️ </span>
+                </div>
+            </div>
+        </footer>
     </section>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/confetti.browser.min.js"></script>
     <script src="js/my-scripts.js"></script>
-    <script></script>
+    <script>
+        // Custom Click Events //
+        $(".multiple-pictures img").click(function(){
+            $(this).parent().toggleClass("default-view");
+            $(this).parent().find(".multiple-pix-info").toggleClass("pix-shown");
+            $(this).parent().parent().find(".txt-block").toggleClass("pix-shown");
+        })
+    </script>
 </body>
 </html>

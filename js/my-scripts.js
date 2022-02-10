@@ -24,8 +24,10 @@ function frame() {
 }
 
 var confettiInterval = null;
+$("body > canvas").hide();
 setTimeout(function () {
     confettiInterval = setInterval(frame(), 1000);
+    $("body > canvas").show();
 }, 10000); //wait 10 seconds
 
 setTimeout(function () {
@@ -37,13 +39,13 @@ setTimeout(function () {
 }, 8000); //wait 3 seconds
 
 setTimeout(function () {
-    $("#main-content").slideDown();
+    $("#main-content, footer").slideDown();
     $(".names-progress-wrapper").slideUp();
 }, 13000); //wait 13 seconds
 
 setTimeout(function () {
     clearInterval(confettiInterval);
-    $("body > canvas").hide();
+    $("body > canvas").fadeOut();
 }, 15000); //wait 14 seconds
 
 
@@ -66,4 +68,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     counter("progress-figure", 0, 100, 10000);
 });
-   
