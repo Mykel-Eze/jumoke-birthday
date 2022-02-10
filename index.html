@@ -16,7 +16,7 @@
     <section id="main-page-wrapper">
         <div class="row full-height">
             <div class="container full-height rel">
-                <div class="flex-div names-progress-wrapper">
+                <div class="flex-div names-progress-wrapper" style="display: none;">
                     <!-- <h2 class="" hidden><span>sweet twenty five</span> </h2>
                     <h2 class="black-txt" hidden><span>& loving you</span> </h2> -->
                     <div class="names-wrapper-block">
@@ -38,17 +38,17 @@
                     </div>
                 </div>
 
-                <div id="main-content" hidden>
+                <div id="main-content">
                     <div class="mc-wrapper">
                         <h2 class=""><span>sweet twenty five</span> </h2>
                         <h2 class="black-txt"><span>& loving you</span> </h2>
                         <div class="pictures-wrapper">
                             <div class="picture-block picture-block-1">
-                                <div class="txt-block">
+                                <!-- <div class="txt-block">
                                     Every time I think about you, I smile and I would say to myself, what better gift 
                                     can God give man. A brave woman. A brilliant and beautiful Lady. I am always short 
                                     of words. Keep been a blessing to our generation and myself.
-                                </div>
+                                </div> -->
                                 <div class="single-picture center">
                                     <img src="images/pix-1.png" alt="Jumoke's Picture" class="celebrant-picture">
                                 </div>
@@ -125,22 +125,30 @@
             </div>
         </div>
 
-        <!-- <div class="play-trigger-wrapper modal-trigger" data-target="birthday-video-box">
+        <div class="play-trigger-wrapper modal-trigger" data-target="birthday-video-box">
             <img src="images/play-text.svg" alt="play-text" class="play-text">
             <img src="images/play.svg" alt="play" class="play-img">
         </div>
 
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-              <h4>Modal Header</h4>
-              <p>A bunch of text</p>
+        <div id="birthday-video-box" class="modal">
+            <img src="images/close-modal.svg" alt="close-modal" class="modal-close">
+            <div class="modal-content full-height">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/kmulGbeWxWM?controls=0&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- <div class="video-title">Happy Birthday Olajumokemi 🎉🎂</div> -->
             </div>
-        </div> -->
+        </div>
 
         <footer hidden>
             <div class="container">
                 <div class="flex-div footer-txt-wrapper">
-                    <span>With ♥ Olamide Olagunju</span>
+                    <div class="ftw-div">
+                        <span>
+                            Every time I think about you, I smile and I would say to myself, what better gift 
+                            can God give man. A brave woman. A brilliant and beautiful Lady. I am always short 
+                            of words. Keep been a blessing to our generation and myself.
+                        </span> <br> <br>
+                        <span>With ❤️ Olamide Olagunju</span>
+                    </div>
                     <span>© Designed with ❤️ </span>
                 </div>
             </div>
@@ -150,14 +158,24 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/confetti.browser.min.js"></script>
-    <script src="js/my-scripts.js"></script>
+    <!-- <script src="js/my-scripts.js"></script> -->
     <script>
         // Custom Click Events //
         $(".multiple-pictures img").click(function(){
             $(this).parent().toggleClass("default-view");
             $(this).parent().find(".multiple-pix-info").toggleClass("pix-shown");
             $(this).parent().parent().find(".txt-block").toggleClass("pix-shown");
-        })
+        });
+        $(document).ready(function(){
+            $('.modal').modal();
+
+            $('#birthday-video-box .modal-close').click(function() {
+                $('#birthday-video-box iframe').attr('src', '');
+            });
+            $(".play-trigger-wrapper").click(function(){
+                $('#birthday-video-box iframe').attr('src', 'https://www.youtube.com/embed/kmulGbeWxWM?controls=0&amp;rel=0');
+            })
+        });
     </script>
 </body>
 </html>

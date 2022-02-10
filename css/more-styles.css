@@ -50,7 +50,6 @@
     color: #A5A5A5;
     margin: 0 auto;
     width: 100%;
-    background-color: white;
     position: fixed;
     top: 0px;
     z-index: 10;
@@ -60,7 +59,6 @@
 }
 .mc-wrapper h2.black-txt, .names-progress-wrapper h2.black-txt {
     top: 110px;
-    background-color: transparent;
     z-index: 0;
 }
 .mc-wrapper h2 span, .names-progress-wrapper h2 span {
@@ -110,6 +108,8 @@
 .multiple-pictures.default-view img:not(:first-child) {
     position: absolute;
     left: 0;
+    right: 0;
+    margin: auto;
     top: 0;
 }
 .multiple-pictures.default-view img:nth-child(1) {
@@ -152,6 +152,54 @@
     opacity: 0;
 }
 
+.play-trigger-wrapper.modal-trigger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    cursor: pointer;
+    z-index: 10;
+}
+img.play-img {
+    position: absolute;
+    top: 50%;
+    bottom: 52%;
+    left: 39%;
+    right: 50%;
+    margin: auto;
+}
+img.play-text {
+    animation: spin infinite 25s linear;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.modal-content.full-height {
+    padding: 0;
+}
+div#birthday-video-box {
+    overflow: visible;
+    min-height: 400px;
+}
+div#birthday-video-box iframe {
+    position: absolute;
+    height: 100%;
+}
+.video-title {
+    position: absolute;
+    bottom: 0;
+    background: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+}
+
 footer {
     position: fixed;
     bottom: 20px;
@@ -159,4 +207,13 @@ footer {
 }
 .footer-txt-wrapper {
     justify-content: space-between;
+    align-items: flex-end;
+}
+.ftw-div {
+    max-width: 350px;
+}
+img.modal-close {
+    position: absolute;
+    right: -60px;
+    top: -60px;
 }
