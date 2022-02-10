@@ -34,7 +34,7 @@
 }
 
 body {
-	font-family: var(--font) !important;
+	font-family: 'pushpenny', sans-serif !important;
 	height: auto;
     min-height: 100vh;
     background-color: white;
@@ -54,19 +54,19 @@ body {
     display: none;
 }
 .reg-txt{
-    font-family: var(--font) !important;
+    font-family: 'pushpenny', sans-serif !important;
 }
-.smbold-txt{
-    font-family: var(--font-smbold) !important;
-}
+/* .smbold-txt{
+    font-family: 'pushpenny', sans-serif !important;
+} */
 .bold-txt{
-    font-family: var(--font-bold) !important;
+    font-family: 'pushpenny-bold', sans-serif !important;
 }
 .light-txt{
-    font-family: var(--font-light) !important;
+    font-family: 'pushpenny-light', sans-serif !important;
 }
 .pry-font{
-    font-family: var(--font) !important;
+    font-family: 'pushpenny', sans-serif !important;
 }
 .rel{
     position: relative;
