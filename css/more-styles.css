@@ -49,10 +49,11 @@
     letter-spacing: -0.03em;
     color: #A5A5A5;
     margin: 0 auto;
-    width: 100%;
+    width: calc(100% - 20px);
     position: fixed;
     top: 0px;
     z-index: 10;
+    left: 20px;
 }
 .names-progress-wrapper h2 {
     width: 85%;
