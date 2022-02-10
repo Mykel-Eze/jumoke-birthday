@@ -34,7 +34,7 @@
 }
 
 body {
-	font-family: var(--font);
+	font-family: var(--font) !important;
 	height: auto;
     min-height: 100vh;
     background-color: white;
@@ -54,19 +54,19 @@ body {
     display: none;
 }
 .reg-txt{
-    font-family: var(--font);
+    font-family: var(--font) !important;
 }
 .smbold-txt{
-    font-family: var(--font-smbold);
+    font-family: var(--font-smbold) !important;
 }
 .bold-txt{
-    font-family: var(--font-bold);
+    font-family: var(--font-bold) !important;
 }
 .light-txt{
-    font-family: var(--font-light);
+    font-family: var(--font-light) !important;
 }
 .pry-font{
-    font-family: var(--font);
+    font-family: var(--font) !important;
 }
 .rel{
     position: relative;
