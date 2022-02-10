@@ -217,3 +217,110 @@ img.modal-close {
     right: -60px;
     top: -60px;
 }
+
+@media(max-width: 992px) {
+    .mc-wrapper h2 span, .names-progress-wrapper h2 span {
+        width: 90%;
+        margin-left: 0;
+    }
+    .mc-wrapper h2, .names-progress-wrapper h2 {
+        font-size: 60px;
+    }
+    .mc-wrapper h2.black-txt, .names-progress-wrapper h2.black-txt {
+        top: 60px;
+        z-index: 0;
+    }
+    .play-trigger-wrapper.modal-trigger {
+        width: 100px;
+    }
+    .txt-block {
+        position: relative;
+        max-width: 60%;
+        bottom: initial;
+        right: 0;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .multiple-pictures {
+        margin-bottom: 35px;
+    }
+}
+@media(max-width: 600px) {
+    #main-page-wrapper {
+        height: auto;
+    }
+    #main-content {
+        padding-bottom: 10px;
+    }
+    footer {
+        padding: 20px;
+        position: relative;
+    }
+    .footer-txt-wrapper {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    .ftw-div {
+        max-width: 350px;
+        margin-top: 20px;
+    }
+    .txt-block {
+        max-width: 90%;
+    }
+    .names-progress-wrapper {
+        font-size: 50px;
+        line-height: 78px;
+        color: #828282;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 10px;
+        height: auto;
+        flex-direction: column-reverse;
+        min-height: 60%;
+        padding: 20px;
+    }
+    .progress-block {
+        font-size: 80px;
+    }
+    .text-1, .text-2 {
+        font-size: 40px;
+    }
+    .multiple-pictures {
+        max-height: 500px;
+    }
+    .multiple-pictures:not(.default-view) {
+        max-height: 10000px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+    }
+    .txt-block.pix-shown {
+        opacity: 1 !important;
+    }
+    .mc-wrapper h2, .names-progress-wrapper h2 {
+        font-size: 50px;
+        line-height: 50px;
+        top: 20px;
+    }
+    .mc-wrapper h2.black-txt, .names-progress-wrapper h2.black-txt {
+        top: 130px;
+        z-index: 0;
+    }
+    .play-trigger-wrapper.modal-trigger {
+        width: 70px;
+        top: 170px;
+    }
+    img.modal-close {
+        position: absolute;
+        right: -10px;
+        top: -60px;
+    }
+    img.play-img {
+        width: 30px;
+        left: 35%;
+    }
+}

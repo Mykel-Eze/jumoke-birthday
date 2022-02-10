@@ -41,12 +41,13 @@ setTimeout(function () {
 setTimeout(function () {
     $("#main-content, footer").slideDown();
     $(".names-progress-wrapper").slideUp();
+    $(".play-trigger-wrapper").show();
 }, 13000); //wait 13 seconds
 
 setTimeout(function () {
     clearInterval(confettiInterval);
     $("body > canvas").fadeOut();
-}, 15000); //wait 14 seconds
+}, 15000); //wait 15 seconds
 
 
 
