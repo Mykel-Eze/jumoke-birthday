@@ -68,3 +68,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     counter("progress-figure", 0, 100, 10000);
 });
+
+// Text Transition
+var text = ["Honey.", "Baby.", "My love.", "Ekomuj."];
+var counter = 0;
+var elem = $("#name");
+setInterval(change, 2500);
+function change() {
+    elem.slideUp(function(){
+        elem.html(text[counter]);
+        counter++;
+        if(counter >= text.length) { counter = 0; }
+        elem.slideDown();
+    });
+}
