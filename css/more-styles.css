@@ -259,18 +259,18 @@ img.modal-close {
     .footer-txt-wrapper {
         justify-content: flex-start;
         align-items: flex-start;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .ftw-div {
         max-width: 350px;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .txt-block {
         max-width: 90%;
     }
     .names-progress-wrapper {
         font-size: 50px;
-        line-height: 78px;
+        line-height: 58px;
         color: #828282;
         justify-content: space-between;
         align-items: center;
@@ -313,6 +313,7 @@ img.modal-close {
     .play-trigger-wrapper.modal-trigger {
         width: 70px;
         top: 170px;
+        position: absolute;
     }
     img.modal-close {
         position: absolute;
